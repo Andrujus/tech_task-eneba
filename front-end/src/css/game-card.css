@@ -1,0 +1,56 @@
+.Game-Card{
+    background-color: #20094d;
+    height: 400px;
+    width: 250px;
+    margin: 10px;
+    border-style: solid;
+    border-color: aquamarine;
+}
+
+.images{
+    height: 250px;
+    width: 100%;
+    background-color: #5116d0;
+}
+
+.title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.region{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aquamarine;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.discount{
+    color: rgba(211, 211, 211, 0.757);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.price{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.favorite{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
