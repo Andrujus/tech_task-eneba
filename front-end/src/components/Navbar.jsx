@@ -1,6 +1,15 @@
+import { useState } from "react";
 import "../css/navbar.css"
 
+
+
+
 function Navbar() {
+    
+    const HandleSearch = () => {};
+
+    const [searchQuery, setSearchQuery] = useState("");
+
     return(
         <nav className="navigation-bar">
             <div className="logo-cont">
@@ -8,10 +17,14 @@ function Navbar() {
                 <div className="logo-text">eneba</div>
             </div>
             
-            <div className="search-cont">
-                <button className="search-btn">⌕</button>
-                <input className="input-bar" placeholder="search"/>
-            </div>
+            <form onSubmit={HandleSearch} className="search-cont">
+                <button type="submit" className="search-btn">⌕</button>
+                <input className="input-bar" 
+                placeholder="search" 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                />
+            </form>
             <div className="nav-right">
                 <button className="language-btn"></button>
                 <div className="language">LT</div>

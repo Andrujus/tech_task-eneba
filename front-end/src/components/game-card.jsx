@@ -3,7 +3,9 @@ import "../css/game-card.css"
 function GameCard(props){
     return (
         <div className="Game-Card">
-            <div className="images"></div>
+            <div className="images">
+                <img className="card-img" src={props.Image}/>
+            </div>
             <div className="card-cont">
                 <div className="title">{props.Title}</div>
                 <div className="region">{props.Region}</div>
