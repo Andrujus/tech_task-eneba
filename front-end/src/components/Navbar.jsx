@@ -3,7 +3,11 @@ import "../css/navbar.css"
 function Navbar() {
     return(
         <nav className="navigation-bar">
-            <img src="/vite.svg"/>
+            <div className="logo-cont">
+                <img className="logo" src="/eneba1.png"/>
+                <div className="logo-text">eneba</div>
+            </div>
+            
             <div className="search-cont">
                 <button className="search-btn">⌕</button>
                 <input className="input-bar" placeholder="search"/>

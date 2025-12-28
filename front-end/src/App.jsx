@@ -10,8 +10,10 @@ function App() {
     <>
     <Navbar/>
       <div className='centered-view'>
-        
-        <GameCard/>
+        <GameCard Title="Fifa 23 Steam Key" Region="GLOBAL" Discount="€49.99" Price="€41.99"/>
+        <GameCard Title=" Red Dead Redemption 2" Region = "EUROPE" Discount="€39.99" Price="€23.99"/>
+        <GameCard Title=" Red Dead Redemption 2" Region = "EUROPE" Discount="€39.99" Price="€23.99"/>
+        <GameCard Title=" Red Dead Redemption 2" Region = "EUROPE" Discount="€39.99" Price="€23.99"/>
       </div>
       
     </>
