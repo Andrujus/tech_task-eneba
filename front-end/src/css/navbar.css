@@ -1,8 +1,85 @@
 .navigation-bar{
     width: 75%;
-    height: 40px;
-    display: inline;
+    height: 64px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 36px;
+}
+
+.search-cont{
+    display: flex;
+    align-items: center;
+
+    flex: 1;
+    max-width: 550px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.search-btn{
+
+    height: 42px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: 2px solid white;
+    border-right: 0;
+
+    background-color: #4518ad;
+    cursor: pointer;
+
+    font-size: 30px;
+    color: white;
 }
 
 .input-bar{
+    flex: 1;
+
+    max-width: 500px;
+
+    height: 36px;
+
+    border-right: none;
+
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: #4518ad;
+    border-left: 0px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.language-btn{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.language{
+    color: white;
+    margin: 5px;
+}
+
+.favorites{
+    color: white;
+    margin: 10px;
+}
+
+.cart{
+    color: white;
+    margin: 5px;
+}
+
+.account{
+    color: white;
+    margin: 5px;
 }
