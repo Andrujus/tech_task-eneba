@@ -15,3 +15,9 @@ CREATE TABLE "User" (
     Email VARCHAR(255),
     PasswordHash VARCHAR(255)
 );
+
+INSERT INTO "User" (UserId, Username, Email, PasswordHash)
+    VALUES(1, 'andrujus', 'test@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8');
+--password: "password" 
+
+SELECT * from "User";

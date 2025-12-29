@@ -8,6 +8,11 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) =>{
+    //app.post();
+    res.send("404")
+});
+
 // create a new Game Card
 app.post("/Games", async(req, res) =>{
     try {
