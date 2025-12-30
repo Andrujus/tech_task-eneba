@@ -13,10 +13,16 @@ const getUsers = async () => {
   return result.rows;
 };
 
+const getGames = async () =>{
+  const result = await pool.query('SELECT * FROM "Game"');
+  return result.rows;
+};
+
+// Fetch from database to backend
 const UsersToJson = async () => {
   try {
     const users = await getUsers();
-    fs.writeFile('./data_json/users.json', JSON.stringify(users), "utf8", (err) =>{
+    fs.writeFile('./data_json/users.json', JSON.stringify(users, null, 2), "utf8", (err) =>{
     if (err) console.log("writefile error");
     else console.log("done");
 });
@@ -26,5 +32,19 @@ const UsersToJson = async () => {
   }
 }
 
+// Fetch from database to backend
+const GamesToJson = async () =>{
+  try {
+    const games = await getGames();
+    fs.writeFile('./data_json/games.json', JSON.stringify(games, null, 2), "utf8", (err) =>{
+    if (err) console.log("writefile error");
+    else console.log("done");
+  });
+  } catch (err) {
+    console.error(err);
+  }
+};
 
-UsersToJson();
+
+//UsersToJson();
+//GamesToJson();

@@ -1,0 +1,34 @@
+[
+  {
+    "gameid": 1,
+    "userid": 1,
+    "gametitle": "Fifa 23 Steam Key",
+    "gameregion": "GLOBAL",
+    "gameprice": 41.99,
+    "platform": "PC"
+  },
+  {
+    "gameid": 2,
+    "userid": 1,
+    "gametitle": "Red Dead Redemption",
+    "gameregion": "EUROPE",
+    "gameprice": 32.99,
+    "platform": "PC"
+  },
+  {
+    "gameid": 3,
+    "userid": 1,
+    "gametitle": "Split Fiction",
+    "gameregion": "GLOBAL",
+    "gameprice": 34.14,
+    "platform": "PS4"
+  },
+  {
+    "gameid": 4,
+    "userid": 1,
+    "gametitle": "Red Dead Redemption",
+    "gameregion": "GLOBAL",
+    "gameprice": 29.99,
+    "platform": "XBOX One"
+  }
+]

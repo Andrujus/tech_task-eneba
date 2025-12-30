@@ -4,19 +4,39 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import GameCard from './components/game-card'
 import Navbar from './components/Navbar'
-import fifa23 from "./assets/fifa-23.png"
-import rdr2 from "./assets/rdr-2.png"
-import splitfiction from "./assets/split-fiction.png"
+import { useEffect } from 'react'
 
 function App() {
+
+  const [games, setGames] = useState([]);
+
+  useEffect(() => {
+    const getGames = async () => {
+      try {
+        const res = await fetch("http://localhost:5000/list");
+        const data = await res.json();
+        console.log(data);
+        setGames(data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    getGames();
+  }, []);
   return (
     <>
     <Navbar/>
       <div className='centered-view'>
-        <GameCard Image={fifa23} Title="Fifa 23 PS4" Region="GLOBAL" Discount="€49.99" Price="€41.99"/>
-        <GameCard Image={rdr2} Title=" Red Dead Redemption 2" Region = "EUROPE" Discount="€39.99" Price="€23.99"/>
-        <GameCard Image={splitfiction} Title=" Split Fiction Steam Key" Region = "EUROPE" Discount="€39.99" Price="€23.99"/>
-        <GameCard Image={rdr2} Title=" Red Dead Redemption 2" Region = "GLOBAL" Discount="€39.99" Price="€23.99"/>
+        <>
+        {games.map((data) => (
+          <GameCard key={data.gameid}
+          Image={`http://localhost:5000/images/${data.ImageUrl}`}
+          Title={data.gametitle} 
+          Region={data.gameregion} 
+          Price={`€${data.gameprice}`}/>
+        ))}
+        </>
       </div>
       
     </>

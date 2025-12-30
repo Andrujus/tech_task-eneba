@@ -21,5 +21,13 @@ INSERT INTO "User" (UserId, Username, Email, PasswordHash)
 --password: "password" 
 
 SELECT * from "User";
+SELECT * FROM "Game";
 
-INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform) VALUES(1, 1, 'Fifa 23 Steam Key', 'GLOBAL', 41.99, 'PC');
+
+-- Add images to the db
+INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform) VALUES(4, 1, 'Red Dead Redemption', 'GLOBAL', 29.99, 'XBOX One');
+
+UPDATE "Game" SET "ImageUrl" = 'fifa-23.png' WHERE gameid = 1;
+UPDATE "Game" SET "ImageUrl" = 'rdr-2.png' WHERE gameid = 2;
+UPDATE "Game" SET "ImageUrl" = 'split-fiction.png' WHERE gameid = 3;
+UPDATE "Game" SET "ImageUrl" = 'rdr-2.png' WHERE gameid = 4;
