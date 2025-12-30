@@ -1,13 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import GameCard from './components/game-card'
 import Navbar from './components/Navbar'
 import { useEffect } from 'react'
 
 function App() {
-
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -24,10 +21,15 @@ function App() {
 
     getGames();
   }, []);
+
   return (
     <>
     <Navbar/>
+    
       <div className='centered-view'>
+        <div className='results-found'> 
+          Results found: {games.length}
+        </div>
         <>
         {games.map((data) => (
           <GameCard key={data.gameid}
