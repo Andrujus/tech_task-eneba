@@ -9,14 +9,16 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) =>{
-    //app.post();
-    res.send("404")
+    res.send("/list for games list")
 });
 
-// create a new Game Card
-app.post("/Games", async(req, res) =>{
+// List games
+app.get("/list", async(req, res) =>{
     try {
-        console.log(req.body);
+        const listGames = await pool.query(`SELECT gameid, gametitle, gameregion, gameprice, platform
+FROM "Game";`);
+
+        res.json(listGames.rows);
     } catch (err) {
         console.error(err.message);
     }
@@ -25,3 +27,4 @@ app.post("/Games", async(req, res) =>{
 app.listen(port, ()=>{
     console.log("listening on localhost:5000");
 });
+

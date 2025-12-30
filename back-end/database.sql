@@ -21,3 +21,5 @@ INSERT INTO "User" (UserId, Username, Email, PasswordHash)
 --password: "password" 
 
 SELECT * from "User";
+
+INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform) VALUES(1, 1, 'Fifa 23 Steam Key', 'GLOBAL', 41.99, 'PC');
