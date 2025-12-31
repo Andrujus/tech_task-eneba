@@ -25,11 +25,11 @@ function App() {
   return (
     <>
     <Navbar/>
-    
-      <div className='centered-view'>
-        <div className='results-found'> 
+      <div className='results-found'> 
           Results found: {games.length}
         </div>
+      <div className='centered-view'>
+        
         <>
         {games.map((data) => (
           <GameCard key={data.gameid}
