@@ -1,0 +1,6 @@
+{
+  "watch": ["server.js", "db.js", "helper.js"],
+  "ignore": ["data_json/*", "public/images/*", "public/acc_images/*"],
+  "ext": "js,json",
+  "exec": "node server.js"
+}

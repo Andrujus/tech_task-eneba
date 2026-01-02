@@ -5,7 +5,8 @@
     "gametitle": "Fifa 23 Steam Key",
     "gameregion": "GLOBAL",
     "gameprice": 41.99,
-    "platform": "PC"
+    "platform": "PC",
+    "ImageUrl": "fifa-23.png"
   },
   {
     "gameid": 2,
@@ -13,7 +14,8 @@
     "gametitle": "Red Dead Redemption",
     "gameregion": "EUROPE",
     "gameprice": 32.99,
-    "platform": "PC"
+    "platform": "PC",
+    "ImageUrl": "rdr-2.png"
   },
   {
     "gameid": 3,
@@ -21,7 +23,8 @@
     "gametitle": "Split Fiction",
     "gameregion": "GLOBAL",
     "gameprice": 34.14,
-    "platform": "PS4"
+    "platform": "PS4",
+    "ImageUrl": "split-fiction.png"
   },
   {
     "gameid": 4,
@@ -29,6 +32,7 @@
     "gametitle": "Red Dead Redemption",
     "gameregion": "GLOBAL",
     "gameprice": 29.99,
-    "platform": "XBOX One"
+    "platform": "XBOX One",
+    "ImageUrl": "rdr-2.png"
   }
 ]

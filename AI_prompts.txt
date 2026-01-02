@@ -5,3 +5,5 @@ GitHub Copilot:
 I need to set up routes for home and account pages. Look into app.jsx and fix the routing.
 
 make game cards (picture 1) to look as close as possible to (picture 2). edit game-card.css file only
+
+(plan agent) How do I implement "list/search:query?" api?

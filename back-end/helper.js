@@ -45,6 +45,4 @@ const GamesToJson = async () =>{
   }
 };
 
-
-//UsersToJson();
-//GamesToJson();
+export default GamesToJson;
