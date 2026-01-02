@@ -1,69 +1,119 @@
 .Game-Card {
     background-color: #20094d;
     border: 1px solid aquamarine;
+    border-radius: 8px;
+    overflow: hidden;
 
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
-    width: 250px;
-    height: 400px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    min-height: 360px;
+}
+
+.Game-Card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(81, 22, 208, 0.4);
+    border-color: aquamarine;
+}
+
+.game-card-btn{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+
+    width: 100%;
+    height: auto;
+    
+    margin-bottom: 20px;
 }
 
 .card-cont{
     display: flex;
     flex-direction: column;
+    padding: 12px;
+    padding-top: 10px;
+    flex: 1;
+    justify-content: space-between;
 }
 
 .images{
-    height: 250px;
+    height: 220px;
     width: 100%;
     background-color: #5116d0;
+    overflow: hidden;
+    aspect-ratio: 1;
 }
 
 .title{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 0;
     margin-left: 10px;
+    margin-bottom: 6px;
+    text-align: left;
 }
 
 .region{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:aquamarine;
+    color: aquamarine;
     font-weight: bold;
-    font-size: 15px;
-    margin: 10px;
-    margin-bottom: 15px;
+    font-size: 13px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .discount{
     color: rgba(211, 211, 211, 0.757);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
-    margin: 5px;
+    font-size: 12px;
+    margin: 0;
     margin-left: 10px;
+    margin-bottom: 4px;
+    text-align: left;
 }
 
 .price{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
+    margin: 0;
     margin-left: 10px;
+    text-align: left;
+    margin-bottom: 8px;
 }
 
 .favorite{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
+    margin: 0;
     margin-left: 10px;
-    margin-bottom: 5px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 0;
+}
+
+.favorite:hover {
+    color: aquamarine;
 }
 
 .card-img{
@@ -72,22 +122,63 @@
     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+    .Game-Card {
+        max-width: 220px;
+    }
+}
+
 @media (max-width: 600px) {
     .Game-Card{
         flex-direction: row;
         width: 100%;
+        max-width: 100%;
         height: auto;
+        min-height: auto;
         transition: all 0.3s ease;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .images{
-        width: 40%;
-        height: 100%;
+        width: 35%;
+        height: 140px;
+        aspect-ratio: auto;
     }
 
     .card-cont{
-        width: 60%;
-        justify-content: center;
+        width: 65%;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 13px;
+    }
+
+    .price {
+        font-size: 18px;
     }
 }
+
+@media (max-width: 480px) {
+    .Game-Card {
+        margin-bottom: 12px;
+    }
+
+    .images {
+        height: 120px;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .region {
+        font-size: 11px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+}
+

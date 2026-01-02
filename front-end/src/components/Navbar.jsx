@@ -1,29 +1,28 @@
 import { useState } from "react";
 import "../css/navbar.css"
 import { Heart, ShoppingCart } from "lucide-react"
+import { Route, Routes, Router, Link } from 'react-router-dom'
 
 
 
 
 function Navbar() {
     
-    const HandleSearch = () => {};
-
-    const [searchQuery, setSearchQuery] = useState("");
-
     return(
         <nav className="navigation-bar">
-            <div className="logo-cont">
-                <img className="logo" src="/eneba1.png"/>
-                <div className="logo-text">eneba</div>
-            </div>
+            <Link to='/'>
+            <button className="logo-btn">
+                <div className="logo-cont">
+                    <img className="logo" src="/eneba1.png"/>
+                    <div className="logo-text">eneba</div>
+                </div>
+            </button>
+            </Link>
             
-            <form onSubmit={HandleSearch} className="search-cont">
+            <form className="search-cont">
                 <button type="submit" className="search-btn">⌕</button>
                 <input className="input-bar" 
                 placeholder="search" 
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
                 />
             </form>
             <div className="nav-right">
@@ -35,7 +34,11 @@ function Navbar() {
                 <button className="cart">
                     <ShoppingCart/>
                 </button>
-                <button className="account"></button>
+                <Link to="/account">
+                    <button className="account"></button>
+                </Link>
+                
+                
             </div>
         </nav>
     )

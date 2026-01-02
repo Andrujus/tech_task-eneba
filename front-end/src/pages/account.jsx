@@ -1,13 +1,15 @@
 import Navbar from '../components/Navbar'
+import "../css/account.css"
 
-function Account() {
+function Account(props) {
+
+
   return (
     <>
-      <Navbar />
-      <div className="account-page">
-        <h1>Account Page</h1>
-        
-      </div>
+    <Navbar/>
+    <div className='account-cont'>
+        <h3>Account</h3>
+    </div>
     </>
   );
 }

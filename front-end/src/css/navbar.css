@@ -108,3 +108,9 @@
     height: 20px;
     border: 1px solid white;
 }
+
+.logo-btn{
+    background-color: #4518ad;
+    border: 0;
+    cursor: pointer;
+}
