@@ -3,47 +3,22 @@ import './App.css'
 import GameCard from './components/game-card'
 import Navbar from './components/Navbar'
 import { useEffect } from 'react'
+import Home from './pages/home'
+import Account from './pages/account'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
-  const [games, setGames] = useState([]);
-
-  useEffect(() => {
-    const getGames = async () => {
-      try {
-        const res = await fetch("http://localhost:5000/list");
-        const data = await res.json();
-        console.log(data);
-        setGames(data);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
-    getGames();
-  }, []);
-
-  return (
+  return(
     <>
-    <Navbar/>
-      <div className='results-found'> 
-          Results found: {games.length}
-        </div>
-      <div className='centered-view'>
-        
-        <>
-        {games.map((data) => (
-          <GameCard key={data.gameid}
-          Image={`http://localhost:5000/images/${data.ImageUrl}`}
-          Title={data.gametitle} 
-          Region={data.gameregion} 
-          Price={`€${data.gameprice}`}/>
-        ))}
-        </>
-      </div>
-      
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/account' element={<Account/>}/>
+        </Routes>
+      </Router>
     </>
-  )
-}
+  );
+};
 
 export default App
 

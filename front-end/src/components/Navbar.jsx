@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../css/navbar.css"
+import { Heart, ShoppingCart } from "lucide-react"
 
 
 
@@ -28,9 +29,13 @@ function Navbar() {
             <div className="nav-right">
                 <button className="language-btn"></button>
                 <div className="language">LT</div>
-                <div className="favorites">♡</div>
-                <div className="cart">🛒</div>
-                <div className="account">👤</div>
+                <button className="favorites-btn">
+                    <Heart/>
+                </button>
+                <button className="cart">
+                    <ShoppingCart/>
+                </button>
+                <button className="account"></button>
             </div>
         </nav>
     )

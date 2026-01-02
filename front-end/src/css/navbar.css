@@ -85,17 +85,26 @@
     margin: 5px;
 }
 
-.favorites{
+.favorites-btn{
     color: white;
-    margin: 10px;
+    background-color: #4518ad;
+    border: 0;
+    cursor: pointer;
 }
 
 .cart{
     color: white;
-    margin: 5px;
+    background-color: #4518ad;
+    border: 0;
+    cursor: pointer;
+
 }
 
 .account{
     color: white;
     margin: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
 }
