@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 
 function Home() {
   const [games, setGames] = useState([]);
+  const [allGames, setAllGames] = useState([]);
 
   useEffect(() => {
     const getGames = async () => {
@@ -14,6 +15,7 @@ function Home() {
         const data = await res.json();
         console.log(data);
         setGames(data);
+        setAllGames(data);
       } catch (err) {
         console.error(err);
       }
@@ -22,9 +24,17 @@ function Home() {
     getGames();
   }, []);
 
+  const handleSearchResults = (searchResults) => {
+    if (searchResults === null) {
+      setGames(allGames);
+    } else {
+      setGames([...searchResults]);
+    }
+  };
+
   return (
     <>
-    <Navbar/>
+    <Navbar onSearchResults={handleSearchResults}/>
       <div className='results-found'> 
           Results found: {games.length}
         </div>

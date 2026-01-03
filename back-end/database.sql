@@ -25,7 +25,12 @@ SELECT * FROM "Game";
 
 
 -- Add images to the db
-INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform, ImageUrl) VALUES(5, 1, 'Fifa 23', 'GLOBAL', 29.99, 'XBOX One', 'fifa-23.png');
+INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform, imageurl) VALUES(5, 1, 'Fifa 23', 'GLOBAL', 29.99, 'XBOX One', 'fifa-23.png');
+INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform, imageurl) VALUES(5, 1, 'Fifa 23', 'GLOBAL', 29.99, 'XBOX One', 'fifa-23.png');
+INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform, imageurl) VALUES(5, 1, 'Fifa 23', 'GLOBAL', 29.99, 'XBOX One', 'fifa-23.png');
+INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform, imageurl) VALUES(5, 1, 'Fifa 23', 'GLOBAL', 29.99, 'XBOX One', 'fifa-23.png');
+INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform, imageurl) VALUES(5, 1, 'Fifa 23', 'GLOBAL', 29.99, 'XBOX One', 'fifa-23.png');
+INSERT INTO "Game" (GameId, UserId, GameTitle, GameRegion, GamePrice, Platform, imageurl) VALUES(5, 1, 'Fifa 23', 'GLOBAL', 29.99, 'XBOX One', 'fifa-23.png');
 
 UPDATE "Game" SET "ImageUrl" = 'fifa-23.png' WHERE gameid = 1;
 UPDATE "Game" SET "ImageUrl" = 'rdr-2.png' WHERE gameid = 2;
@@ -36,3 +41,7 @@ ALTER TABLE "User"
 ADD ImageUrl VARCHAR(255);
 
 UPDATE "User" SET "imageurl" = 'acc_images/andrujus.jpeg' WHERE userid = 1;
+
+select *
+from "Game"
+where false;
