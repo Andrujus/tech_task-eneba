@@ -5,6 +5,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { WritableStreamDefaultWriter } from "stream/web";
 import GamesToJson from "./helper.js"
+import Fuse from "fuse.js";
+import fs from "fs";
 
 const app = express();
 const port = 5000;
@@ -51,27 +53,33 @@ app.get("/api/user_list", async(req, res) =>{
     }
 });
 
-app.get("/api/favlist", async(req, res) => {
-    try {
-        
-    } catch (error) {
-        
-    }
-});
+// Load games data and initialize Fuse
+let fuse;
+try {
+    const gamesData = JSON.parse(fs.readFileSync('./data_json/games.json', 'utf8'));
+    fuse = new Fuse(gamesData, {
+        keys: ['gametitle', 'gameregion'],
+        threshold: 0.4
+    });
+    console.log(gamesData.length);
+} catch (err) {
+    console.error('Failed. ', err);
+}
 
 app.get("/api/list/search/:query", async(req, res) => {
     try {
         const query = req.params.query;
-        let sqlQuery = `SELECT gameid, gametitle, gameregion, gameprice, platform, "ImageUrl" FROM "Game"`;
-        const values = [];
-        let paramCount = 1;
-        if (query){
-            sqlQuery += ` WHERE gametitle ILIKE $${paramCount}`;
-            values.push(`%${query}%`);
-            paramCount++;
+        
+        if (!fuse) {
+            return res.status(500).json({ error: 'Search not initialized' });
         }
-        const result = await pool.query(sqlQuery, values);
-        res.json(result.rows);
+        
+        if (!query) {
+            return res.json([]);
+        }
+        
+        const results = fuse.search(query);
+        res.json(results.map(result => result.item));
     } catch (err) {
         console.log(err);
         res.status(500).json({ error: err.message });

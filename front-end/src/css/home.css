@@ -14,3 +14,11 @@
     margin: auto;
     width: 10%;
 }
+
+.pages-btn{
+    background-color: #5116d0;
+    color: white;
+    border: 1px solid white;
+    margin: 2px;
+    border-radius: 20%;
+}

@@ -80,7 +80,7 @@ function Home() {
             <button
               key={page}
               onClick={() => setCurrentPage(page)}
-              style={{ fontWeight: currentPage === page ? 'bold' : 'normal' }}
+              className='pages-btn'
             >
               {page}
             </button>
