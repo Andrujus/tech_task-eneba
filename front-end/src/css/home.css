@@ -1,0 +1,16 @@
+.view-games{
+    margin-left: 10%;
+    background-color: #5116d0;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.results-found{
+    margin-left: 10%;
+}
+
+.pages-view{
+    margin: auto;
+    width: 10%;
+}

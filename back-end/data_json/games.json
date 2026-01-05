@@ -34,5 +34,59 @@
     "gameprice": 29.99,
     "platform": "XBOX One",
     "ImageUrl": "rdr-2.png"
+  },
+  {
+    "gameid": 5,
+    "userid": 1,
+    "gametitle": "Fifa 23",
+    "gameregion": "GLOBAL",
+    "gameprice": 29.99,
+    "platform": "XBOX One",
+    "ImageUrl": "fifa-23.png"
+  },
+  {
+    "gameid": 6,
+    "userid": 1,
+    "gametitle": "Red Dead Redemption 2",
+    "gameregion": "GLOBAL",
+    "gameprice": 29.99,
+    "platform": "PC",
+    "ImageUrl": "rdr-2.png"
+  },
+  {
+    "gameid": 7,
+    "userid": 1,
+    "gametitle": "Fifa 23",
+    "gameregion": "EUROPE",
+    "gameprice": 41.99,
+    "platform": "PS5",
+    "ImageUrl": "fifa-23.png"
+  },
+  {
+    "gameid": 8,
+    "userid": 1,
+    "gametitle": "Split Fiction",
+    "gameregion": "GLOBAL",
+    "gameprice": 34.14,
+    "platform": "PC",
+    "ImageUrl": "split-fiction.png"
+  },
+  {
+    "gameid": 9,
+    "userid": 1,
+    "gametitle": "Red Dead Redemption 2",
+    "gameregion": "EUROPE",
+    "gameprice": 32.99,
+    "platform": "XBOX One",
+    "ImageUrl": "rdr-2.png"
+  },
+  {
+    "gameid": 10,
+    "userid": 1,
+    "gametitle": "Fifa 23",
+    "gameregion": "GLOBAL",
+    "gameprice": 39.99,
+    "platform": "PS4",
+    "ImageUrl": "fifa-23.png"
   }
 ]

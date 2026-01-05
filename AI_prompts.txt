@@ -16,3 +16,6 @@ make game cards (picture 1) to look as close as possible to (picture 2). edit ga
 (plan agent) How do I implement "list/search:query?" api?
 
 Games from the search should only appear on enter click or when the button "submit" is pressed
+
+*home.jsx
+i want to render buttons for pages when there's more games than visiblecount, and i also don't want to render too much buttons for pages that don't exist

@@ -51,6 +51,14 @@ app.get("/api/user_list", async(req, res) =>{
     }
 });
 
+app.get("/api/favlist", async(req, res) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+});
+
 app.get("/api/list/search/:query", async(req, res) => {
     try {
         const query = req.params.query;

@@ -22,11 +22,16 @@ function Navbar({ onSearchResults }) {
         e.preventDefault();
         fetchData(input);
     }
+    
+    const handleLogoClick = () => {
+        setInput("");
+        if (onSearchResults) onSearchResults(null);
+    }
 
     return(
         <nav className="navigation-bar">
             <Link to='/'>
-            <button className="logo-btn">
+            <button className="logo-btn" onClick={handleLogoClick}>
                 <div className="logo-cont">
                     <img className="logo" src="/eneba1.png"/>
                     <div className="logo-text">eneba</div>

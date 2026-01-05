@@ -12,7 +12,9 @@ function GameCard(props){
                 <div className="region">{props.Region}</div>
                 <div className="discount">from {props.Discount}</div>
                 <div className="price">{props.Price}</div>
-                <button className="favorite">♡</button>
+                <button className="favorite" onClick={() => {
+                    
+                }}>♡</button>
             </div>
         </div>
     </button>
