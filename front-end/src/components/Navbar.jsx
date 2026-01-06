@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../css/navbar.css"
-import { Heart, ShoppingCart } from "lucide-react"
+import { Heart, ShoppingCart, User } from "lucide-react"
 import { Route, Routes, Router, Link } from 'react-router-dom'
 
 function Navbar({ onSearchResults }) {
@@ -51,14 +51,18 @@ function Navbar({ onSearchResults }) {
             <div className="nav-right">
                 <button className="language-btn"></button>
                 <div className="language">LT</div>
-                <button className="favorites-btn">
-                    <Heart/>
-                </button>
+                <Link to='/favorites'>
+                    <button className="favorites-btn">
+                        <Heart/>
+                    </button>
+                </Link>
                 <button className="cart">
                     <ShoppingCart/>
                 </button>
                 <Link to="/account">
-                    <button className="account"></button>
+                    <button className="account">
+                        <User/>
+                    </button>
                 </Link>
                 
                 

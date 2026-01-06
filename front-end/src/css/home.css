@@ -16,9 +16,10 @@
 }
 
 .pages-btn{
-    background-color: #5116d0;
+    background-color: #4518ad;
     color: white;
-    border: 1px solid white;
+    border: 0;
+    font-size: 18px;
     margin: 2px;
     border-radius: 20%;
 }

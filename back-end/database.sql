@@ -45,3 +45,11 @@ UPDATE "User" SET "imageurl" = 'acc_images/andrujus.jpeg' WHERE userid = 1;
 select *
 from "Game"
 where false;
+
+ALTER TABLE "Game"
+ADD IsFavorite BOOLEAN;
+
+UPDATE "Game" SET IsFavorite = false WHERE gameid = 1;
+UPDATE "Game" SET IsFavorite = true WHERE gameid = 2;
+UPDATE "Game" SET IsFavorite = true WHERE gameid = 3;
+UPDATE "Game" SET IsFavorite = false WHERE gameid = 4;

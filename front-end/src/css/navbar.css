@@ -102,11 +102,11 @@
 
 .account{
     color: white;
-    margin: 5px;
-    border-radius: 50%;
+    background-color: #4518ad;
+    border: 0;
     width: 20px;
     height: 20px;
-    border: 1px solid white;
+    cursor: pointer;
 }
 
 .logo-btn{

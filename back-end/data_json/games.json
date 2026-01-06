@@ -1,48 +1,13 @@
 [
   {
-    "gameid": 1,
-    "userid": 1,
-    "gametitle": "Fifa 23 Steam Key",
-    "gameregion": "GLOBAL",
-    "gameprice": 41.99,
-    "platform": "PC",
-    "ImageUrl": "fifa-23.png"
-  },
-  {
-    "gameid": 2,
-    "userid": 1,
-    "gametitle": "Red Dead Redemption",
-    "gameregion": "EUROPE",
-    "gameprice": 32.99,
-    "platform": "PC",
-    "ImageUrl": "rdr-2.png"
-  },
-  {
-    "gameid": 3,
-    "userid": 1,
-    "gametitle": "Split Fiction",
-    "gameregion": "GLOBAL",
-    "gameprice": 34.14,
-    "platform": "PS4",
-    "ImageUrl": "split-fiction.png"
-  },
-  {
-    "gameid": 4,
-    "userid": 1,
-    "gametitle": "Red Dead Redemption",
-    "gameregion": "GLOBAL",
-    "gameprice": 29.99,
-    "platform": "XBOX One",
-    "ImageUrl": "rdr-2.png"
-  },
-  {
     "gameid": 5,
     "userid": 1,
     "gametitle": "Fifa 23",
     "gameregion": "GLOBAL",
     "gameprice": 29.99,
     "platform": "XBOX One",
-    "ImageUrl": "fifa-23.png"
+    "ImageUrl": "fifa-23.png",
+    "isfavorite": null
   },
   {
     "gameid": 6,
@@ -51,7 +16,8 @@
     "gameregion": "GLOBAL",
     "gameprice": 29.99,
     "platform": "PC",
-    "ImageUrl": "rdr-2.png"
+    "ImageUrl": "rdr-2.png",
+    "isfavorite": null
   },
   {
     "gameid": 7,
@@ -60,7 +26,8 @@
     "gameregion": "EUROPE",
     "gameprice": 41.99,
     "platform": "PS5",
-    "ImageUrl": "fifa-23.png"
+    "ImageUrl": "fifa-23.png",
+    "isfavorite": null
   },
   {
     "gameid": 8,
@@ -69,7 +36,8 @@
     "gameregion": "GLOBAL",
     "gameprice": 34.14,
     "platform": "PC",
-    "ImageUrl": "split-fiction.png"
+    "ImageUrl": "split-fiction.png",
+    "isfavorite": null
   },
   {
     "gameid": 9,
@@ -78,7 +46,8 @@
     "gameregion": "EUROPE",
     "gameprice": 32.99,
     "platform": "XBOX One",
-    "ImageUrl": "rdr-2.png"
+    "ImageUrl": "rdr-2.png",
+    "isfavorite": null
   },
   {
     "gameid": 10,
@@ -87,6 +56,47 @@
     "gameregion": "GLOBAL",
     "gameprice": 39.99,
     "platform": "PS4",
-    "ImageUrl": "fifa-23.png"
+    "ImageUrl": "fifa-23.png",
+    "isfavorite": null
+  },
+  {
+    "gameid": 1,
+    "userid": 1,
+    "gametitle": "Fifa 23 Steam Key",
+    "gameregion": "GLOBAL",
+    "gameprice": 41.99,
+    "platform": "PC",
+    "ImageUrl": "fifa-23.png",
+    "isfavorite": false
+  },
+  {
+    "gameid": 2,
+    "userid": 1,
+    "gametitle": "Red Dead Redemption",
+    "gameregion": "EUROPE",
+    "gameprice": 32.99,
+    "platform": "PC",
+    "ImageUrl": "rdr-2.png",
+    "isfavorite": true
+  },
+  {
+    "gameid": 3,
+    "userid": 1,
+    "gametitle": "Split Fiction",
+    "gameregion": "GLOBAL",
+    "gameprice": 34.14,
+    "platform": "PS4",
+    "ImageUrl": "split-fiction.png",
+    "isfavorite": true
+  },
+  {
+    "gameid": 4,
+    "userid": 1,
+    "gametitle": "Red Dead Redemption",
+    "gameregion": "GLOBAL",
+    "gameprice": 29.99,
+    "platform": "XBOX One",
+    "ImageUrl": "rdr-2.png",
+    "isfavorite": false
   }
 ]

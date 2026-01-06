@@ -5,7 +5,9 @@ import Navbar from './components/Navbar'
 import { useEffect } from 'react'
 import Home from './pages/home'
 import Account from './pages/account'
+import Favorites from './pages/favorite'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
 
 function App() {
   return(
@@ -14,6 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/account' element={<Account/>}/>
+          <Route path='/favorites' element={<Favorites/>}/>
         </Routes>
       </Router>
     </>

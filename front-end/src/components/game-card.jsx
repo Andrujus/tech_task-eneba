@@ -1,8 +1,14 @@
+import { Heart } from "lucide-react";
 import "../css/game-card.css"
+import { useState } from "react"
 
 function GameCard(props){
+    const [isFav, setIsFav] = useState(false);
+
+    
+
     return (
-    <button className="game-card-btn">
+    <div className="game-card-btn">
         <div className="Game-Card">
             <div className="images">
                 <img className="card-img" src={props.Image}/>
@@ -12,12 +18,13 @@ function GameCard(props){
                 <div className="region">{props.Region}</div>
                 <div className="discount">from {props.Discount}</div>
                 <div className="price">{props.Price}</div>
-                <button className="favorite" onClick={() => {
-                    
-                }}>♡</button>
+                <button className="favorite" 
+                onClick={() => {}}>
+                    {isFav ? <Heart fill="white"/> : <Heart/>}
+                </button>
             </div>
         </div>
-    </button>
+    </div>
     )
 }
 

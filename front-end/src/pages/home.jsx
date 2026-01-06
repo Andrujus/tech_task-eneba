@@ -44,6 +44,8 @@ function Home() {
   const startIndex = (currentPage - 1) * visibleCount;
   const endIndex = startIndex + visibleCount;
 
+  let cart = [];
+
   return (
     <>
     <Navbar onSearchResults={handleSearchResults}/>

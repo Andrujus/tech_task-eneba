@@ -30,7 +30,7 @@ app.get("/", (req, res) =>{
 app.get("/api/list", async(req, res) =>{
     try {
         const listGames = await pool.query(`
-  SELECT gameid, userid, gametitle, gameregion, gameprice, platform, "ImageUrl"
+  SELECT gameid, userid, gametitle, gameregion, gameprice, platform, "ImageUrl", 'IsFavorite'
   FROM "Game";
 `);
         res.json(listGames.rows);
@@ -53,7 +53,21 @@ app.get("/api/user_list", async(req, res) =>{
     }
 });
 
-// Load games data and initialize Fuse
+// List favortie games
+app.get("/api/list/favorites", async (req, res) => {
+    try {
+        const listFavorites = await pool.query(`
+    SELECT gameid, gametitle, gameprice, gameregion, "ImageUrl", IsFavorite FROM "Game" WHERE IsFavorite = true;         
+`);
+        res.json(listFavorites.rows);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json({ error: err.message});
+    }
+    
+});
+
+// Fuzzy search api
 let fuse;
 try {
     const gamesData = JSON.parse(fs.readFileSync('./data_json/games.json', 'utf8'));
@@ -86,7 +100,7 @@ app.get("/api/list/search/:query", async(req, res) => {
     }
 });
 
-//-------------------------------------------------
+/*-------------------------------------------------*/
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
