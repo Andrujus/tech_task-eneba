@@ -15,6 +15,7 @@ This repository contains a technical task implementation showcasing a complete w
 
 ### References
 
+[Program Startup](#program-startup)\
 [Database Documentation](#database)\
 [Back-end Documentation](#back-end)\
 [Front-end Documentation](#front-end)
