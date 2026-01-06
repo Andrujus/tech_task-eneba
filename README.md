@@ -1,10 +1,68 @@
 # tech_task-eneba
 
+## Summary
+
+This repository contains a technical task implementation showcasing a complete web application with a clear separation between frontend and backend. The project focuses on demonstrating sound software engineering practices, including structured project organization, API-based communication, and data management. It is intended as a practical example of building, running, and extending a modern web application in a development environment.
+
+[Database Documentation](#database)
+
+## Program Startup
+### Initial Setup
+
+- Clone the GitHub repository
+```sh
+git clone https://github.com/Andrujus/tech_task-eneba.git
+cd tech_task-eneba
+```
+
+### Database Setup
+
+1. Create a PostgreSQL database
+```sql
+CREATE DATABASE tech_task_eneba;
+```
+2. Configure Database connections variables in `back-end/db.js`
+```js
+const pool = new Pool({
+    user: "USERNAME",
+    password: "PASSWORD",
+    host: "localhost",
+    port: 5432,
+    database: "enebatechtask"
+});
+```
+Now, proceed to the back-end setup.
+### Back-end Setup
+
+1. Navigate to the back-end directory `cd back-end`
+2. Install dependencies
+```sh
+npm install
+```
+3. Start the back-end server
+```sh
+node server.js
+```
+After that, open a new terminal and proceed to the front-end setup.
+
+### Front-end Setup
+
+1. Navigate to the front-end directory `cd front-end`
+2. Install dependencies
+```sh
+npm install
+```
+3. Start the front-end website
+```sh
+npm run dev
+```
+4. Press the localhost link, and you're good to go!
+
 ## Database
 
 ### Introduction
 
-This project includes a PostgreSQL database, used by the back-end to store, retrieve, and manage application data.
+This project uses a PostgreSQL database, which is used by the back-end to store, retrieve, and manage application data.
 
 ### Structure
 
