@@ -126,6 +126,7 @@ This project uses a PostgreSQL database, which is used by the back-end to store,
 | GamePrice | FLOAT | Game price displayed in the Game Card |
 | Platform | VARCHAR | Platform for future development (Filter by platform) |
 | ImageUrl | VARCHAR | Image URL which is stored in the back-end |
+| IsFavorite | Boolean | Sets Game's favorite status |
 
 #### User
 
@@ -135,9 +136,11 @@ This project uses a PostgreSQL database, which is used by the back-end to store,
 | Username | VARCHAR | User's name |
 | Email | VARCHAR | User's email address |
 | PasswordHash | VARCHAR | User's Hashed Password |
+| ImageUrl | VARCHAR | Image URL which is stored in the back-end |
 
 #### Entity Relation Diagram
-<img width="640" height="300" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/b8ae631c-818b-4d38-bbad-08982c019eed" />
+<img width="640" height="480" alt="Untitled Diagram drawio (1)" src="https://github.com/user-attachments/assets/84083a24-7bfe-46e7-a46c-af7493d23a36" />
+
 
 ## Back-end
 
@@ -174,6 +177,7 @@ The back-end handles application logic, data management, and API communication b
 | GET | "/api/list" | Lists all games from the DB |
 | GET | "/api/user_list" | Lists all users from the DB |
 | GET | "/api/list/search/:query" | Initializes fuzzy search |
+| PATCH | "api/list/:id | Toggles "IsFavorite" to true or false |
 
 ## Front-end
 
