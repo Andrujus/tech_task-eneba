@@ -4,8 +4,8 @@
 
 This repository contains a technical task implementation showcasing a complete web application with a clear separation between frontend and backend. The project focuses on demonstrating sound software engineering practices, including structured project organization, API-based communication, and data management. It is intended as a practical example of building, running, and extending a modern web application in a development environment.
 
-[Database Documentation](#database)
-[Back-end Documentation](#back-end)
+[Database Documentation](#database)\
+[Back-end Documentation](#back-end)\
 [Front-end Documentation](#front-end)
 
 ### File structure
@@ -211,3 +211,11 @@ The front-end provides the user interface for the application and communicates w
 ├── README.md
 └── vite.config.js
 ```
+
+### Styling
+Styling is implemented using plain CSS and is organized under `src/css/`. Each page and reusable UI element has its own stylesheet (e.g., `home.css`, `navbar.css`, `game-card.css`) to keep styles modular, readable, and easy to maintain.
+#### Colors
+The colors used are:
+- `#5116d0`
+- `#4518ad`
+- `#20094d`
