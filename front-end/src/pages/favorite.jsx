@@ -35,6 +35,7 @@ function Favorites(props) {
         Title={data.gametitle}
         Region={data.gameregion}
         Price={`€${data.gameprice}`}
+        Favorite={data.isfavorite}
       />
     ))};
     </div>

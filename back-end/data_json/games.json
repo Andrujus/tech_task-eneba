@@ -1,5 +1,15 @@
 [
   {
+    "gameid": 3,
+    "userid": 1,
+    "gametitle": "Split Fiction",
+    "gameregion": "GLOBAL",
+    "gameprice": 34.14,
+    "platform": "PS4",
+    "ImageUrl": "split-fiction.png",
+    "isfavorite": true
+  },
+  {
     "gameid": 5,
     "userid": 1,
     "gametitle": "Fifa 23",
@@ -7,7 +17,7 @@
     "gameprice": 29.99,
     "platform": "XBOX One",
     "ImageUrl": "fifa-23.png",
-    "isfavorite": null
+    "isfavorite": false
   },
   {
     "gameid": 6,
@@ -17,7 +27,7 @@
     "gameprice": 29.99,
     "platform": "PC",
     "ImageUrl": "rdr-2.png",
-    "isfavorite": null
+    "isfavorite": false
   },
   {
     "gameid": 7,
@@ -27,7 +37,7 @@
     "gameprice": 41.99,
     "platform": "PS5",
     "ImageUrl": "fifa-23.png",
-    "isfavorite": null
+    "isfavorite": false
   },
   {
     "gameid": 8,
@@ -37,7 +47,7 @@
     "gameprice": 34.14,
     "platform": "PC",
     "ImageUrl": "split-fiction.png",
-    "isfavorite": null
+    "isfavorite": false
   },
   {
     "gameid": 9,
@@ -47,7 +57,7 @@
     "gameprice": 32.99,
     "platform": "XBOX One",
     "ImageUrl": "rdr-2.png",
-    "isfavorite": null
+    "isfavorite": false
   },
   {
     "gameid": 10,
@@ -57,7 +67,7 @@
     "gameprice": 39.99,
     "platform": "PS4",
     "ImageUrl": "fifa-23.png",
-    "isfavorite": null
+    "isfavorite": false
   },
   {
     "gameid": 1,
@@ -80,16 +90,6 @@
     "isfavorite": true
   },
   {
-    "gameid": 3,
-    "userid": 1,
-    "gametitle": "Split Fiction",
-    "gameregion": "GLOBAL",
-    "gameprice": 34.14,
-    "platform": "PS4",
-    "ImageUrl": "split-fiction.png",
-    "isfavorite": true
-  },
-  {
     "gameid": 4,
     "userid": 1,
     "gametitle": "Red Dead Redemption",
@@ -97,6 +97,6 @@
     "gameprice": 29.99,
     "platform": "XBOX One",
     "ImageUrl": "rdr-2.png",
-    "isfavorite": false
+    "isfavorite": true
   }
 ]

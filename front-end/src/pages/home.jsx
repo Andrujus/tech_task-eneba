@@ -68,10 +68,12 @@ function Home() {
         {games.slice(startIndex, endIndex).map((data) => (
           <GameCard
           key={data.gameid}
+          id={data.gameid}
           Image={`http://localhost:5000/images/${data.ImageUrl}`}
           Title={data.gametitle}
           Region={data.gameregion}
           Price={`€${data.gameprice}`}
+          Favorite={data.isfavorite}
           />
           ))}
         </>

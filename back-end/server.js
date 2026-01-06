@@ -30,8 +30,9 @@ app.get("/", (req, res) =>{
 app.get("/api/list", async(req, res) =>{
     try {
         const listGames = await pool.query(`
-  SELECT gameid, userid, gametitle, gameregion, gameprice, platform, "ImageUrl", 'IsFavorite'
-  FROM "Game";
+  SELECT gameid, userid, gametitle, gameregion, gameprice, platform, "ImageUrl", isfavorite
+  FROM "Game"
+  ORDER BY gameid;
 `);
         res.json(listGames.rows);
     } catch (err) {
@@ -57,7 +58,7 @@ app.get("/api/user_list", async(req, res) =>{
 app.get("/api/list/favorites", async (req, res) => {
     try {
         const listFavorites = await pool.query(`
-    SELECT gameid, gametitle, gameprice, gameregion, "ImageUrl", IsFavorite FROM "Game" WHERE IsFavorite = true;         
+    SELECT gameid, gametitle, gameprice, gameregion, "ImageUrl", isfavorite FROM "Game" WHERE isfavorite = true;         
 `);
         res.json(listFavorites.rows);
     } catch (err) {
@@ -65,6 +66,24 @@ app.get("/api/list/favorites", async (req, res) => {
         res.status(500).json({ error: err.message});
     }
     
+});
+
+// Update game favorite status
+app.patch("/api/list/:id", async (req, res) => {
+    try {
+        const gameId = req.params.id;
+        const { IsFavorite } = req.body;
+        
+        const updateGame = await pool.query(
+            `UPDATE "Game" SET isfavorite = $1 WHERE gameid = $2`,
+            [IsFavorite, gameId]
+        );
+        
+        res.json({ message: "Game updated successfully" });
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // Fuzzy search api
