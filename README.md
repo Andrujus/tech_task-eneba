@@ -5,6 +5,52 @@
 This repository contains a technical task implementation showcasing a complete web application with a clear separation between frontend and backend. The project focuses on demonstrating sound software engineering practices, including structured project organization, API-based communication, and data management. It is intended as a practical example of building, running, and extending a modern web application in a development environment.
 
 [Database Documentation](#database)
+[Back-end Documentation](#back-end)
+[Front-end Documentation](#front-end)
+
+### File structure
+```sh
+.
+├── back-end
+│   ├── data_json
+│   │   └── games.json
+│   ├── public
+│   │   ├── acc_images
+│   │   └── images
+│   ├── .env
+│   ├── database.sql
+│   ├── db.js
+│   ├── helper.js
+│   ├── nodemon.json
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
+├── front-end
+│   ├── public
+│   │   ├── .DS_Store
+│   │   ├── eneba.png
+│   │   └── eneba1.png
+│   ├── src
+│   │   ├── assets
+│   │   ├── components
+│   │   ├── css
+│   │   ├── pages
+│   │   ├── .DS_Store
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── README.md
+│   └── vite.config.js
+├── .gitignore
+├── AI_prompts.txt
+└── README.md
+```
 
 ## Program Startup
 ### Initial Setup
@@ -88,3 +134,80 @@ This project uses a PostgreSQL database, which is used by the back-end to store,
 
 #### Entity Relation Diagram
 <img width="640" height="300" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/b8ae631c-818b-4d38-bbad-08982c019eed" />
+
+## Back-end
+
+### Introduction
+
+The back-end handles application logic, data management, and API communication between the client and the database.
+
+### File Structure
+```sh
+.
+├── data_json
+│   └── games.json
+├── public
+│   ├── acc_images
+│   │   └── andrujus.jpeg
+│   └── images
+│       ├── fifa-23.png
+│       ├── rdr-2.png
+│       └── split-fiction.png
+├── .env
+├── database.sql
+├── db.js
+├── helper.js
+├── nodemon.json
+├── package-lock.json
+├── package.json
+└── server.js
+```
+
+### API Endpoints
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| GET | "/" | Health check |
+| GET | "/api/list" | Lists all games from the DB |
+| GET | "/api/user_list" | Lists all users from the DB |
+| GET | "/api/list/search/:query" | Initializes fuzzy search |
+
+## Front-end
+
+### Introduction
+The front-end provides the user interface for the application and communicates with the back-end API to display and update data. It is organized into reusable components and page-level views to keep the UI modular and maintainable.
+
+### File Structure
+```sh
+.
+├── public
+│   ├── .DS_Store
+│   ├── eneba.png
+│   └── eneba1.png
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── game-card.jsx
+│   │   └── Navbar.jsx
+│   ├── css
+│   │   ├── account.css
+│   │   ├── game-card.css
+│   │   ├── home.css
+│   │   └── navbar.css
+│   ├── pages
+│   │   ├── account.jsx
+│   │   ├── favorite.jsx
+│   │   ├── game.jsx
+│   │   └── home.jsx
+│   ├── .DS_Store
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+```
