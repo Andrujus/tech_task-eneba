@@ -1,4 +1,8 @@
 # tech_task-eneba
+<p align="center">
+    <img width="720" height="405" alt="eneba" src="https://github.com/user-attachments/assets/897bbaa2-5fe6-4450-9e58-0788837c8ba1" />
+</p>
+
 
 ## Summary
 
