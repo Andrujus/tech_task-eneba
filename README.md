@@ -10,9 +10,10 @@ This repository contains a technical task implementation showcasing a complete w
 
 ## Demo
 <p align="center">
-    ![demo video](./Demo.gif)    
+  <img src="Demo.gif" />
 </p>
 
+### References
 
 [Database Documentation](#database)\
 [Back-end Documentation](#back-end)\
