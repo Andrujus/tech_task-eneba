@@ -9,6 +9,7 @@ function Home() {
   const [allGames, setAllGames] = useState([]);
   const [visibleCount, setVisibleCount] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
+  
 
   useEffect(() => {
     const getGames = async () => {

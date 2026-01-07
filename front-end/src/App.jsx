@@ -10,6 +10,11 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
 function App() {
+  useEffect(() => {
+    document.title = "Tech Task Eneba";
+  }, []);
+
+
   return(
     <>
       <Router>
