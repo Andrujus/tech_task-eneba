@@ -1,18 +1,16 @@
-import pkg from "pg"
-const { Pool } = pkg;
-import "dotenv/config";
-
+import pg from "pg";
+const { Pool } = pg;
 
 const pool = new Pool({
-    user: "postgres.dhnfukswupijdrbzpqpi",
-    password: process.env.SUPABASE_DB_PASSWORD,
-    host: "aws-1-eu-north-1.pooler.supabase.com",
-    port: 5432,
-    database: "postgres",
-    ssl: {
-        require: true,
-        rejectUnauthorized: false,
-    },
+  host: process.env.PGHOST,
+  port: Number(process.env.PGPORT || 5432),
+  user: process.env.PGUSER,
+  password: process.env.PGPASSWORD,
+  database: process.env.PGDATABASE || "postgres",
+  ssl:
+    process.env.PGSSLMODE === "require"
+      ? { require: true, rejectUnauthorized: false }
+      : false,
 });
 
-export default pool
+export default pool;
