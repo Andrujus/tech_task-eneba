@@ -11,7 +11,7 @@ function Navbar({ onSearchResults }) {
             if (onSearchResults) onSearchResults(null);
             return;
         }
-        const res = await fetch(`http://localhost:5000/api/list/search/${encodeURIComponent(value)}`);
+        const res = await fetch(`https://tech-task-eneba.onrender.com/api/list/search/${encodeURIComponent(value)}`);
         const data = await res.json();
         console.log(data);
         

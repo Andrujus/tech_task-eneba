@@ -13,7 +13,7 @@ function Home() {
   useEffect(() => {
     const getGames = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/list");
+        const res = await fetch("https://tech-task-eneba.onrender.com/api/list");
         const data = await res.json();
         console.log(data);
         setGames(data);
@@ -69,7 +69,7 @@ function Home() {
           <GameCard
           key={data.gameid}
           id={data.gameid}
-          Image={`http://localhost:5000/images/${data.ImageUrl}`}
+          Image={`https://tech-task-eneba.onrender.com/images/${data.ImageUrl}`}
           Title={data.gametitle}
           Region={data.gameregion}
           Price={`€${data.gameprice}`}

@@ -8,7 +8,7 @@ function GameCard(props){
     const handleClick = async () => {
         const next = !favorite;
         try {
-            const response = await fetch(`http://localhost:5000/api/list/${props.id}`, {
+            const response = await fetch(`https://tech-task-eneba.onrender.com/api/list/${props.id}`, {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ IsFavorite: next })

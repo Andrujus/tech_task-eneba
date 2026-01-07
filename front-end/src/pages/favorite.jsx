@@ -11,7 +11,7 @@ function Favorites(props) {
   useEffect(() => {
       const GetFavorites = async () => {
         try {
-          const res = await fetch("http://localhost:5000/api/list/favorites");
+          const res = await fetch("https://tech-task-eneba.onrender.com/api/list/favorites");
           const data = await res.json();
           console.log(data);
           setFavorites(data);
@@ -31,7 +31,7 @@ function Favorites(props) {
     {favorites.map((data) => (
       <GameCard
       key={data.gameid}
-        Image={`http://localhost:5000/images/${data.ImageUrl}`}
+        Image={`https://tech-task-eneba.onrender.com/images/${data.ImageUrl}`}
         Title={data.gametitle}
         Region={data.gameregion}
         Price={`€${data.gameprice}`}
