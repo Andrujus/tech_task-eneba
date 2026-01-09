@@ -1,18 +1,25 @@
 .view-games{
-    margin-left: 10%;
+    margin: 12px 16px 4px;
     background-color: #5116d0;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
+    padding: 6px 10px;
 }
 
 .results-found{
-    margin-left: 10%;
+    margin: 8px auto 12px;
 }
 
 .pages-view{
-    margin: auto;
-    width: 10%;
+    margin: 12px auto 24px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .pages-btn{
@@ -20,6 +27,24 @@
     color: white;
     border: 0;
     font-size: 18px;
-    margin: 2px;
-    border-radius: 20%;
+    padding: 8px 12px;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .view-games{
+        margin: 12px 12px 4px;
+    }
+
+    .pages-view{
+        padding: 0 12px;
+        gap: 6px;
+    }
+
+    .pages-btn{
+        font-size: 16px;
+        padding: 6px 10px;
+    }
 }
