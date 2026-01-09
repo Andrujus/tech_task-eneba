@@ -9,7 +9,8 @@ This repository contains a technical task implementation showcasing a complete w
 
 ## Deployed Website
 
-<a href='https://sunny-kangaroo-3f36ad.netlify.app/'>Check the website here!</a>
+<a href='https://sunny-kangaroo-3f36ad.netlify.app/'>Check the website here!</a>\
+*It might take up to 30 seconds to load the contents from the database since I'm using free deployment options*
 
 ## Demo
 <p align="center">
