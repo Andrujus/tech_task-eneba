@@ -232,7 +232,21 @@ The front-end provides the user interface for the application and communicates w
 Styling is implemented using plain CSS and is organized under `src/css/`. Each page and reusable UI element has its own stylesheet (e.g., `home.css`, `navbar.css`, `game-card.css`) to keep styles modular, readable, and easy to maintain.
 #### Colors
 The colors used are:
-- `#5116d0`
-- `#4518ad`
-- `#20094d`
+- `#5116D0`
+- `#4518AD`
+- `#20094D`
 
+## Tools Used
+
+### Development
+
+Front-end framework: `React`\
+Back-end Framework: `ExpressJS`\
+Database: `PostreSQL`\
+Fuzzy Search: `Fuse` package
+
+### Deployment
+
+Database: `Supabase`\
+Back-end Server: `Render`\
+Front-end: `Netlify`
