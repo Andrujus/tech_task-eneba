@@ -3,10 +3,13 @@
     <img width="720" height="405" alt="eneba" src="https://github.com/user-attachments/assets/897bbaa2-5fe6-4450-9e58-0788837c8ba1" />
 </p>
 
-
 ## Summary
 
 This repository contains a technical task implementation showcasing a complete web application with a clear separation between frontend and backend. The project focuses on demonstrating sound software engineering practices, including structured project organization, API-based communication, and data management. It is intended as a practical example of building, running, and extending a modern web application in a development environment.
+
+## Deployed Website
+
+<a href='https://sunny-kangaroo-3f36ad.netlify.app/'>Check the website here!</a>
 
 ## Demo
 <p align="center">
