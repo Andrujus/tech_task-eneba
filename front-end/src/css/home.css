@@ -1,10 +1,10 @@
 .view-games{
-    margin: 12px 16px 4px;
+    margin-left: 10%;
+
     background-color: #5116d0;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
-    padding: 6px 10px;
 }
 
 .results-found{

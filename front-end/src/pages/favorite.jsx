@@ -31,6 +31,7 @@ function Favorites(props) {
     {favorites.map((data) => (
       <GameCard
       key={data.gameid}
+      id={data.gameid}
         Image={`https://tech-task-eneba.onrender.com/images/${data.ImageUrl}`}
         Title={data.gametitle}
         Region={data.gameregion}
